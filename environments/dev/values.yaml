@@ -1,0 +1,3 @@
+baseUrl: DEV_ENV_BASEURL
+backend:
+  debug: DEV_ENV_DEBUG

@@ -1,0 +1,3 @@
+baseUrl: {{ .Environment.Values | get "baseUrl" }}
+backend:
+  debug: {{ .Environment.Values | get "backend.debug" }}

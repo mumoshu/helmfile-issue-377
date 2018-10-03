@@ -1,0 +1,16 @@
+environments:
+  default:
+    values:
+    - environments/default.yaml
+  dev:
+    values:
+    - environments/default.yaml
+    - environments/dev/values.yaml
+
+releases:
+  - name: environment
+    chart: ./charts/environment
+    labels:
+      tier: infrastructure
+    values:
+    - values.yaml.gotmpl
